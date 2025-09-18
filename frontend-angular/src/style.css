@@ -1,0 +1,5 @@
+body { font-family: system-ui, Arial; margin: 2rem; }
+h1 { margin-bottom: 0.5rem; }
+.card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-bottom: 0.5rem;}
+input, select { padding: 8px; margin-right: 8px; }
+button { padding: 8px 12px; }
