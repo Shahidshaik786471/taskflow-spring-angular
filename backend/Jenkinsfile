@@ -1,0 +1,12 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') { steps { sh 'mvn -q -DskipTests package' } }
+    stage('Test')  { steps { sh 'mvn -q test' } }
+    stage('Docker') {
+      steps {
+        sh 'docker build -t taskflow-backend:latest .'
+      }
+    }
+  }
+}
